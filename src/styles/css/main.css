@@ -1,3 +1,4 @@
+/* Обнуление */
 *{padding: 0;margin: 0;border: 0;}
 *,*:before,*:after{
 -moz-box-sizing: border-box;
@@ -25,8 +26,7 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/**------------------------------------------------------------*/
-
+/* Переменные цвета */
 :root{
     --header-color:rgb(88, 84, 84);
     --bottom-color:rgb(88, 84, 84);
@@ -197,7 +197,7 @@ footer div{
     color: red;
     font-size: 25px;
 }
-
+/* Медиа запросы */
 @media(max-width:1000px){
     .person_img{
         margin-left:5px;
@@ -248,11 +248,7 @@ header{
         width: 270px;
     }
 }
-
-
-
-/* //////////////////// */
-
+/* Ожидание загрузки*/
 .lds-hourglass {
     display: inline-block;
     position: relative;
@@ -267,9 +263,14 @@ header{
     height: 0;
     margin: 8px;
     box-sizing: border-box;
-    border: 32px solid #fff;
-    border-color: #fff transparent #fff transparent;
+    border: 32px solid black;
+    border-color: black transparent black transparent;
     animation: lds-hourglass 1.2s infinite;
+  }
+  /* Ошибка */
+  .error{
+      font-size: 30px;
+      color: rgb(177, 0, 0);
   }
   @keyframes lds-hourglass {
     0% {
